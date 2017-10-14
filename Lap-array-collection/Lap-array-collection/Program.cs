@@ -34,7 +34,6 @@ namespace Lap_array_collection
             Console.WriteLine(data[9]);
             Console.WriteLine(data[10]);
             Console.ReadLine();
-
         }
     }
 }
