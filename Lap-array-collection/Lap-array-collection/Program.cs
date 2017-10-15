@@ -17,10 +17,10 @@ namespace ConsoleAppArray
           
 
             Console.WriteLine("------String sorting----------");
-            foreach (string name in monthsName)
+            foreach (string name in monthsName) 
                 Console.WriteLine(monthsName);
-            Console.ReadLine();
-
+            Console.ReadLine();      
+               
         }
     }
 }
