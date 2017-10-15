@@ -10,7 +10,7 @@ namespace Lap_array_collection
     {
         static void Main(string[] args)
         {
-            int[] data = new int[10];
+            int[] data = new int[11];
             data[0] = 0;
             data[1] = 1;
             data[2] = 2;
