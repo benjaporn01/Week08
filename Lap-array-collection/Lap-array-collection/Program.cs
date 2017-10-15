@@ -7,25 +7,22 @@ class Program
 {
     static void Main(string[] args)
     {
-        ArrayList list1 = new ArrayList();
-        list1.Add(10);
-        list1.Add(20);
-        list1.Add(30);
-        list1.Add(40);
-                    for (int i = 0; i < list1.Count; i++)
-                        {
-            Console.WriteLine(list1[i]);
-                        }
-        ArrayList list2 = new ArrayList(list1);
-        list2[1 * 2] = 10;/*
-           list2[3] = 20;
-            list2[4] = 30;*/
-        
-                    for (int i = 0; i < list2.Count; i++)
-                       {
-            Console.WriteLine(list2[i]);
-                      }
-        Console.ReadLine();
+        string[] monthsName = new string[]
+           { "January","February","March","April","May","June","July","August", "September", "October", "November",  "December" };
+        // C# program that uses LINQ
+        var sortAscending = from months in monthsName
+                            orderby months
+                            select months;
+        var sortDescending = from months in monthsName
+                             orderby months descending
+                             select months;
+        Console.WriteLine("------String sort ascending----------");
+        foreach (string c in sortAscending)
+            Console.WriteLine(c);
+        Console.WriteLine("------String sort descending----------");
+        foreach (string c in sortDescending)
+            Console.WriteLine(c);
+        Console.ReadKey();
+
     }
 }
- 
