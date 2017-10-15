@@ -16,13 +16,13 @@ class Program
         var sortDescending = from months in monthsName
                              orderby months descending
                              select months;
-        Console.WriteLine("------String sort ascending----------");
-        foreach (string c in sortAscending)
-            Console.WriteLine(c);
-        Console.WriteLine("------String sort descending----------");
-        foreach (string c in sortDescending)
-            Console.WriteLine(c);
+        Console.WriteLine("------sort ascending----------");
+        foreach (string i in sortAscending)
+            Console.WriteLine(i);
+        Console.WriteLine("------sort descending----------");
+        foreach (string i in sortDescending)
+            Console.WriteLine(i);
         Console.ReadKey();
-
+          
     }
 }
