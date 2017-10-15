@@ -251,7 +251,7 @@ class Program
         string value1 = Array.Find(array1, element => element.EndsWith("land"));
         string value2 = Array.Find(array1, element => element.EndsWith("stan"));
         Console.WriteLine(value1);
-        Console.WriteLine(value2);
+        Console.WriteLine(value2);  
         Console.ReadKey();
 
     }
