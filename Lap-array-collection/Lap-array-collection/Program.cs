@@ -7,6 +7,7 @@ namespace ConsoleAppArray
     {
         static void Main(string[] args)
         {
+            float GPA;
             float[] data = new float[9];
             Console.Write("Enter GPS. term 1:");
             data[0] = float.Parse(Console.ReadLine());
@@ -26,16 +27,15 @@ namespace ConsoleAppArray
             data[7] = float.Parse(Console.ReadLine());
             Console.WriteLine("-----------------------------------------");
             Console.WriteLine("GPS. of term 1 ={0}",data[0]);
-            Console.WriteLine("GPS. of term 1 ={0}", data[1]);
-            Console.WriteLine("GPS. of term 1 ={0}", data[2]);
-            Console.WriteLine("GPS. of term 1 ={0}", data[3]);
-            Console.WriteLine("GPS. of term 1 ={0}", data[4]);
-            Console.WriteLine("GPS. of term 1 ={0}", data[5]);
-            Console.WriteLine("GPS. of term 1 ={0}", data[6]);
-            Console.WriteLine("GPS. of term 1 ={0}", data[7]);
-            Console.WriteLine("GPS. of term 1 ={0}", data[8]);
-            Console.WriteLine("-----------------------------------------");           
-            Console.WriteLine("GPA. = {0}",(data[0]+data[1]+ data[2]+ data[3] + data[4] + data[5]+data[6]+data[7]+data[8])/8);
+            Console.WriteLine("GPS. of term 2 ={0}", data[1]);
+            Console.WriteLine("GPS. of term 3 ={0}", data[2]);
+            Console.WriteLine("GPS. of term 4 ={0}", data[3]);
+            Console.WriteLine("GPS. of term 5 ={0}", data[4]);
+            Console.WriteLine("GPS. of term 6 ={0}", data[5]);
+            Console.WriteLine("GPS. of term 7 ={0}", data[6]);
+            Console.WriteLine("GPS. of term 8 ={0}", data[7]);
+            Console.WriteLine("-----------------------------------------");
+            Console.WriteLine("GPA. = {0:F2}", (data[0] + data[1] + data[2] + data[3] + data[4] + data[5] + data[6] + data[7] + data[8]) / 8);
             Console.ReadLine();
         }
     }
